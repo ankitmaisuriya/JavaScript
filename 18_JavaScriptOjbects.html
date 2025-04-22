@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>JavaScript Objects</h1>
+    <p>Objects are variables too, but they can contain many values.</p>
+    <button
+        onclick='document.getElementById("demo").innerHTML = person.firstname + " " + person.lastname + " " + person.age'>Click
+        me</button>
+    <p id="demo"></p>
+    <script>
+        const person = {
+            firstname: "John",
+            lastname: "Doe",
+            age: 30,
+            greet: function () {
+                console.log("Hello " + this.firstname + " " + this.lastname);
+            }
+        }
+    </script>
+</body>
+
+</html>
